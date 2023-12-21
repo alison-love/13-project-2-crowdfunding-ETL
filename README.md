@@ -35,4 +35,12 @@ Database and Table Creation
   
 Data Verification
 - Executed SELECT statements for each table to verify the successful creation and data import.
-  
+
+## Execution Guide
+
+- Clone the repository and navigate to the project directory.
+- Run the Jupyter notebook (ETL_Mini_Project.ipynb) to perform the ETL process.
+- Execute the SQL statements in crowdfunding_db_schema.sql to create the database and tables.
+- Use the COPY command in PostgreSQL to import data from the CSV files into the database.
+- Verify data integrity through SQL queries.
+
