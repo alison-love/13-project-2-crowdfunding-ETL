@@ -26,6 +26,7 @@ Data Extraction and Transformation
 - Created dataframes with unique identifiers (category_id, subcategory_id) and respective titles.
 - Developed a dataframe with detailed campaign information, ensuring proper data type conversions for fields like goal, pledged, and date columns.
 - Extracted contact information, split names into first and last names, and formatted the data into a structured dataframe.
+- Exported each dataframe into its respective CSV file for further analyzing.
  
 Database and Table Creation
 - Designed an ERD to visualize table relationships and identify primary and foreign keys.
