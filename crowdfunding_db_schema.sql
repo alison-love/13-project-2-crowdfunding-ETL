@@ -8,11 +8,13 @@ DROP TABLE IF EXISTS subcategory CASCADE;
         
 
         
+
+        
 CREATE TABLE campaign
 (
   cf_id          integer      NOT NULL,
   contact_id     integer      NOT NULL,
-  company_name   varchar(30)  NOT NULL,
+  company_name   varchar(50)  NOT NULL,
   description    varchar(300) NOT NULL,
   goal           float        NOT NULL,
   pledged        float        NOT NULL,
@@ -29,8 +31,8 @@ CREATE TABLE campaign
 
 CREATE TABLE category
 (
-  category    varchar(30) NOT NULL,
   category_id varchar(30) NOT NULL,
+  category    varchar(30) NOT NULL,
   PRIMARY KEY (category_id)
 );
 
@@ -66,22 +68,7 @@ ALTER TABLE campaign
     REFERENCES contacts (contact_id);
 
         
-      
 
--- COPY campaign
--- FROM '/Users/alisonlove/Bootcamp/13-project-2-crowdfunding-ETL/csv-files/campaign.csv'
--- DELIMITER ','
--- CSV HEADER;
-
--- COPY campaign(cf_id, contact_id, company_name, description, goal, pledged, outcome, backers_count, country, currency, launch_date, end_date, category_id, subcategory_id)
--- FROM '/Users/alisonlove/Bootcamp/13-project-2-crowdfunding-ETL/csv-files/campaign.csv'
--- WITH DELIMITER ','
--- CSV HEADER;
-
-COPY campaign(cf_id, contact_id, company_name, description, goal, pledged, outcome, backers_count, country, currency, launch_date, end_date, category_id, subcategory_id)
-FROM '/Users/alisonlove/Bootcamp/13-project-2-crowdfunding-ETL/csv-files/campaign.csv'
-WITH DELIMITER ','
-CSV HEADER;
 
 COPY category
 FROM '/Users/alisonlove/Bootcamp/13-project-2-crowdfunding-ETL/csv-files/category.csv'
@@ -95,6 +82,11 @@ CSV HEADER;
 
 COPY contacts
 FROM '/Users/alisonlove/Bootcamp/13-project-2-crowdfunding-ETL/csv-files/contacts.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY campaign
+FROM '/Users/alisonlove/Bootcamp/13-project-2-crowdfunding-ETL/csv-files/campaign.csv'
 DELIMITER ','
 CSV HEADER;
 
