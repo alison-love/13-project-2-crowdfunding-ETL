@@ -14,7 +14,7 @@ The Crowdfunding ETL project is a comprehensive exercise designed to practice an
 ## Repository Structure
 
 - ETL_Mini_Project.ipynb: Jupyter notebook containing all Python scripts used for data extraction and transformation.
-- Resources/: Folder containing the original crowdfunding.xlsx and contacts.xlsx files.
+- Starter_Files/Resources/: Folder containing the original crowdfunding.xlsx and contacts.xlsx files.
 - csv-files/: Folder containing the generated CSV files (category.csv, subcategory.csv, campaign.csv, and contacts.csv).
 - crowdfunding_db_schema.sql: SQL file containing the schema for the PostgreSQL database.
 - ERD.png: a visual diagram of the entity relationships between tables
@@ -26,6 +26,7 @@ Data Extraction and Transformation
 - Created dataframes with unique identifiers (category_id, subcategory_id) and respective titles.
 - Developed a dataframe with detailed campaign information, ensuring proper data type conversions for fields like goal, pledged, and date columns.
 - Extracted contact information, split names into first and last names, and formatted the data into a structured dataframe.
+- Exported each dataframe into its respective CSV file for further analyzing.
  
 Database and Table Creation
 - Designed an ERD to visualize table relationships and identify primary and foreign keys.
