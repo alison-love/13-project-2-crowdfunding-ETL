@@ -4,7 +4,7 @@
 
 The Crowdfunding ETL project is a comprehensive exercise designed to practice and demonstrate skills in building an ETL (Extract, Transform, Load) pipeline using Python, Pandas, and PostgreSQL. The project involved extracting data from Excel files, transforming it via Python scripting, and loading it into a PostgreSQL database. Key tasks included data extraction and transformation, CSV file generation, database schema design, and data importation.
 
-## Objectives
+## Objectives:
 
 - Extract and transform data from provided Excel files (crowdfunding.xlsx and contacts.xlsx).
 - Create four CSV files: category.csv, subcategory.csv, campaign.csv, and contacts.csv.
@@ -19,7 +19,7 @@ The Crowdfunding ETL project is a comprehensive exercise designed to practice an
 - crowdfunding_db_schema.sql: SQL file containing the schema for the PostgreSQL database.
 - ERD.png: a visual diagram of the entity relationships between tables
   
-## Objectives:
+## Process
 
 Data Extraction and Transformation
 - Used Python and Pandas for data extraction from Excel files and data transformation.
